@@ -28,7 +28,7 @@ class Solution(object):
         for i ,num in enumerate(nums):
             if target - num in lookup:
                 return [lookup[target-num], i]
-            lookup[num] = 1
+            lookup[num] = i
 
 #test case 
 if __name__ == '__main__':
